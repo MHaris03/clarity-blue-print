@@ -1,4 +1,5 @@
 import React from "react";
+import Heroimg from "../assets/hero-img.avif"
 
 export default function HeroSection() {
     return (
@@ -24,7 +25,7 @@ export default function HeroSection() {
                 {/* Image */}
                 <div className="md:w-1/2 flex justify-center">
                     <img
-                        src="https://plus.unsplash.com/premium_photo-1739510199149-fd9538e721ef?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={Heroimg}
                         alt="Human Design Chart"
                         className="rounded-xl shadow-2xl transform rotate-[-6deg] md:rotate-0"
                     />

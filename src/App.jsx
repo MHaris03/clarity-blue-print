@@ -1,21 +1,30 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./Page/Home";
-import OracleDeck from "./Page/OracleDeck";
-import RemembranceJournal from "./Page/RemembranceJournal";
+import RelationalArchitecturePage from "./Page/Services/RelationalArchitecture";
+import ProfessionalAlignment from "./Page/Services/ProfessionalAlignment";
+import ClarityAI from "./Page/Services/ClarityAi";
+import Executive from "./Page/Services/Executive";
+import OperatingSyatem from "./Page/Services/OperatingSyatem";
+import AboutPage from "./Page/About";
+import ContactPage from "./Page/ContactUs";
+import ScrollToTop from "./components/Scroll";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
-        {/* All pages use Layout */}
         <Route path="/" element={<Layout />}>
-          {/* Home page */}
           <Route index element={<Home />} />
+          <Route path="relational-architecture" element={<RelationalArchitecturePage />} />
+          <Route path="professional-aligement" element={<ProfessionalAlignment />} />
+          <Route path="clarity-ai" element={<ClarityAI />} />
+          <Route path="executive-aligement" element={<Executive />} />
+          <Route path="operating-system" element={<OperatingSyatem />} />
+          <Route path="about-us" element={<AboutPage />} />
+          <Route path="contact-us" element={<ContactPage />} />
 
-          {/* Other pages */}
-          <Route path="remembrance-journal" element={<RemembranceJournal />} />
-          <Route path="oracle-deck" element={<OracleDeck />} />
         </Route>
       </Routes>
     </BrowserRouter>
