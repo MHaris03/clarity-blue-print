@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black text-white fixed w-full z-50 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/">
           <img src='/Clarityblueprint.jpeg' alt="Clarity Logo" className="h-20 w-24" />
@@ -67,6 +67,7 @@ export default function Navbar() {
           </div>
 
           <NavLink to="/contact-us" className="hover:text-blue-500 transition" activeClassName="text-blue-500 font-semibold">Contact Us</NavLink>
+          <NavLink to="/testimonials" className="hover:text-blue-500 transition" activeClassName="text-blue-500 font-semibold">Testimonials</NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -108,6 +109,7 @@ export default function Navbar() {
             ))}
 
             <NavLink to="/contact-us" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>Contact Us</NavLink>
+            <NavLink to="/testimonials" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>Testimonials</NavLink>
           </div>
         </div>
       )}

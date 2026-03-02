@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Logo and Description */}
         <div className="flex flex-col md:w-1/3">
           <NavLink to="/" className="flex items-center mb-4">
-            <img src="/bg.png" alt="Clarity Logo" className="h-32 w-32 mr-3" />
+            <img src="/Clarityblueprint.jpeg" alt="Clarity Logo" className="h-32 w-32 mr-3" />
             {/* <span className="text-xl font-bold text-white">Clarity Blueprint</span> */}
           </NavLink>
           <p className="text-gray-400 text-sm leading-relaxed">
