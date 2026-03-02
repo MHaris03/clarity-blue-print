@@ -22,7 +22,7 @@ const Executive = () => {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 px-6"
                 >
-                    <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#1455c0] to-blue-400 bg-clip-text text-transparent mb-6">
+                    <h1 className="text-5xl md:text-6xl font-bold leading-[1.2] pb-3 bg-gradient-to-r from-[#1455c0] to-blue-400 bg-clip-text text-transparent mb-6">
                         Executive Alignment Session™
                     </h1>
                     <p className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -30,7 +30,7 @@ const Executive = () => {
                     </p>
 
                     <Link
-                        to="/services"
+                        to="/booking"
                         className="px-10 py-4 bg-[#1455c0] hover:bg-blue-600 rounded-xl text-lg font-semibold shadow-xl hover:shadow-[#1455c0]/50 transition"
                     >
                         Book Your Session
@@ -190,7 +190,7 @@ const Executive = () => {
                     </h2>
 
                     <Link
-                        to="/services"
+                        to="/booking"
                         className="inline-block mt-6 px-16 py-5 bg-[#1455c0] text-white font-semibold rounded-2xl hover:bg-blue-600 transition-all shadow-2xl hover:shadow-[#1455c0]/50 text-xl"
                     >
                         Book Your Clarity AI Session

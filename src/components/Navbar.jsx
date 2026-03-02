@@ -9,18 +9,18 @@ export default function Navbar() {
   // Services data for desktop only
   const services = [
     { name: "Clarity Operating System", path: "/operating-system", description: "Personal decision & energy blueprint", icon: <Cpu size={20} className="text-[#1455c0]" /> },
-    { name: "Executive Alignment Session", path: "/executive-aligement", description: "Strategic clarity under pressure", icon: <Activity size={20} className="text-[#1455c0]" /> },
+    { name: "Executive Alignment Session", path: "/executive-alignment", description: "Strategic clarity under pressure", icon: <Activity size={20} className="text-[#1455c0]" /> },
     { name: "Relational Architecture", path: "/relational-architecture", description: "Communication & partnership alignment", icon: <Users size={20} className="text-[#1455c0]" /> },
     { name: "Clarity AI Session", path: "/clarity-ai", description: "Guided clarity through structured analysis", icon: <Layers size={20} className="text-[#1455c0]" /> },
-    { name: "Professional Alignment System", path: "/professional-aligement", description: "Career & income architecture", icon: <Activity size={20} className="text-[#1455c0]" /> },
+    { name: "Professional Alignment System", path: "/professional-alignment", description: "Career & income architecture", icon: <Activity size={20} className="text-[#1455c0]" /> },
   ];
 
   const mobileServices = [
     { name: "Clarity Operating System", path: "/operating-system" },
-    { name: "Executive Alignment Session", path: "/executive-aligement" },
+    { name: "Executive Alignment Session", path: "/executive-alignment" },
     { name: "Relational Architecture", path: "/relational-architecture" },
     { name: "Clarity AI Session", path: "/clarity-ai" },
-    { name: "Professional Alignment System", path: "/professional-aligement" },
+    { name: "Professional Alignment System", path: "/professional-alignment" },
   ];
 
   return (

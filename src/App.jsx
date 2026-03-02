@@ -19,9 +19,9 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="relational-architecture" element={<RelationalArchitecturePage />} />
-          <Route path="professional-aligement" element={<ProfessionalAlignment />} />
+          <Route path="professional-alignment" element={<ProfessionalAlignment />} />
           <Route path="clarity-ai" element={<ClarityAI />} />
-          <Route path="executive-aligement" element={<Executive />} />
+          <Route path="executive-alignment" element={<Executive />} />
           <Route path="operating-system" element={<OperatingSyatem />} />
           <Route path="about-us" element={<AboutPage />} />
           <Route path="contact-us" element={<ContactPage />} />

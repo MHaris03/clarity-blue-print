@@ -4,10 +4,10 @@ import { Linkedin, Instagram, Twitter } from "lucide-react";
 export default function Footer() {
   const services = [
     { name: "Clarity Operating System™", path: "/operating-system" },
-    { name: "Executive Alignment Session™", path: "/executive-aligement" },
+    { name: "Executive Alignment Session™", path: "/executive-alignment" },
     { name: "Relational Architecture™", path: "/relational-architecture" },
     { name: "Clarity AI Session", path: "/clarity-ai" },
-    { name: "Professional Alignment System™", path: "/professional-aligement" },
+    { name: "Professional Alignment System™", path: "/professional-alignment" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Footer() {
             <ul className="space-y-2 text-md">
               <li><NavLink to="/" className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>Home</NavLink></li>
               <li><NavLink to="/about-us" className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>About Clarity</NavLink></li>
-              {/* <li><NavLink to="/services" className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>The Work</NavLink></li> */}
+              {/* <li><NavLink to="/booking" className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>The Work</NavLink></li> */}
               <li><NavLink to="/contact-us" className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>Contact</NavLink></li>
             </ul>
           </div>

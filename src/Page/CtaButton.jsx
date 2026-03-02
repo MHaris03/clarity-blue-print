@@ -25,7 +25,7 @@ const CtaButton = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
                     <Link
-                        to="/services"
+                        to="/booking"
                         className="px-10 sm:px-14 py-3 sm:py-5 bg-[#1455c0] hover:bg-blue-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-[#1455c0]/40 text-base sm:text-lg md:text-xl"
                     >
                         Book Free Clarity Call
