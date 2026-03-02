@@ -10,6 +10,7 @@ import AboutPage from "./Page/About";
 import ContactPage from "./Page/ContactUs";
 import ScrollToTop from "./components/Scroll";
 import Testimonials from "./Page/Testimonials";
+import NotFound from "./Page/NotFound";
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
           <Route path="operating-system" element={<OperatingSyatem />} />
           <Route path="about-us" element={<AboutPage />} />
           <Route path="contact-us" element={<ContactPage />} />
-          <Route path="testimonials" element={<Testimonials/>}/>
+          <Route path="testimonials" element={<Testimonials />} />
 
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
