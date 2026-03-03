@@ -8,7 +8,7 @@ export default function Layout() {
             <Navbar />
 
             {/* Main content area for all child routes */}
-            <main className="flex-grow pt-24 px-6 md:px-12">
+            <main className="flex-grow ">
                 <Outlet />
             </main>
 

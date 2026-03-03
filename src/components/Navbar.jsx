@@ -24,7 +24,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-black text-white fixed w-full z-50 border-b border-gray-800">
+    // <nav className="bg-black text-white fixed w-full z-50 border-b border-gray-800">
+    <nav className="bg-gradient-to-r from-black via-[#0a0f1f] to-black text-white fixed w-full z-50 border-b border-[#1455c0]/30 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/">
@@ -33,8 +34,8 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          <NavLink to="/" className="hover:text-blue-500 transition" activeClassName="text-blue-500 font-semibold">Home</NavLink>
-          <NavLink to="/about-us" className="hover:text-blue-500 transition" activeClassName="text-blue-500 font-semibold">About</NavLink>
+          <NavLink to="/" className="hover:text-[#3b82f6] transition duration-300" activeClassName="text-[#1455c0] font-semibold">Home</NavLink>
+          <NavLink to="/about-us" className="hover:text-[#3b82f6] transition duration-300" activeClassName="text-[#1455c0] font-semibold">About</NavLink>
 
           {/* Services Dropdown (Desktop Only) */}
           <div className="relative">
@@ -46,7 +47,7 @@ export default function Navbar() {
             </button>
 
             {servicesOpen && (
-              <div className="absolute top-8 right-0 bg-[#111] border border-gray-800 rounded-lg shadow-lg w-80 py-2">
+              <div className="absolute top-8 right-0 bg-[#0f172a] border border-[#1455c0]/30 rounded-lg shadow-xl shadow-[#1455c0]/10 w-80 py-2">
                 {services.map((service, i) => (
                   <NavLink
                     key={i}
@@ -66,8 +67,8 @@ export default function Navbar() {
             )}
           </div>
 
-          <NavLink to="/contact-us" className="hover:text-blue-500 transition" activeClassName="text-blue-500 font-semibold">Contact Us</NavLink>
-          <NavLink to="/testimonials" className="hover:text-blue-500 transition" activeClassName="text-blue-500 font-semibold">Testimonials</NavLink>
+          <NavLink to="/contact-us" className="hover:text-[#3b82f6] transition duration-300" activeClassName="text-[#1455c0] font-semibold">Contact Us</NavLink>
+          <NavLink to="/testimonials" className="hover:text-[#3b82f6] transition duration-300" activeClassName="text-[#1455c0] font-semibold">Testimonials</NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -80,8 +81,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed top-0 left-0 h-full w-full bg-black border-r border-gray-800 p-6 flex flex-col z-50 transform transition-transform duration-300">
-
+        <div className="md:hidden fixed top-0 left-0 w-full min-h-screen bg-[#0a0f1f] border-r border-[#1455c0]/30 p-6 flex flex-col z-50 transform transition-transform duration-300">
           {/* Logo and Close Button */}
           <div className="flex items-center justify-between mb-6">
             <NavLink to="/" onClick={() => setIsOpen(false)}>

@@ -8,11 +8,11 @@ const Executive = () => {
         <section className="bg-black text-white overflow-hidden">
 
             {/* Hero Section */}
-            <div className="relative h-[90vh] flex items-center justify-center text-center">
+            <div className="relative min-h-[100svh] mt-20 flex items-center justify-center text-center">
                 <img
                     src={Relation}
                     alt="Relational Architecture"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/70 to-black"></div>
 

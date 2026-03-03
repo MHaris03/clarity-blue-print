@@ -11,6 +11,9 @@ import ContactPage from "./Page/ContactUs";
 import ScrollToTop from "./components/Scroll";
 import Testimonials from "./Page/Testimonials";
 import NotFound from "./Page/NotFound";
+import PrivacyPolicy from "./Page/PrivacyPolicy";
+import TermsConditions from "./Page/TermsCondition";
+import FAQ from "./Page/FAQ";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           <Route path="about-us" element={<AboutPage />} />
           <Route path="contact-us" element={<ContactPage />} />
           <Route path="testimonials" element={<Testimonials />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-condition" element={<TermsConditions />} />
+          <Route path="faq" element={<FAQ />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>
