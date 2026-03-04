@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     // <nav className="bg-black text-white fixed w-full z-50 border-b border-gray-800">
-    <nav className="bg-gradient-to-r from-black via-[#0a0f1f] to-black text-white fixed w-full z-50 border-b border-[#1455c0]/30 backdrop-blur-md">
+    <nav className="bg-[#0f172a] text-white fixed w-full z-50 border-b border-[#1455c0]/30 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/">
