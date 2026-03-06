@@ -30,7 +30,7 @@ const Executive = () => {
                     </p>
 
                     <Link
-                        to="/booking"
+                        to="/contact-us"
                         className="px-10 py-4 bg-[#1455c0] hover:bg-blue-600 rounded-xl text-lg font-semibold shadow-xl hover:shadow-[#1455c0]/50 transition"
                     >
                         Book Your Session
@@ -190,7 +190,7 @@ const Executive = () => {
                     </h2>
 
                     <Link
-                        to="/booking"
+                        to="/contact-us"
                         className="inline-block mt-6 px-16 py-5 bg-[#1455c0] text-white font-semibold rounded-2xl hover:bg-blue-600 transition-all shadow-2xl hover:shadow-[#1455c0]/50 text-xl"
                     >
                         Book Your Clarity AI Session

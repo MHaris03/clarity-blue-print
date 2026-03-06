@@ -26,11 +26,11 @@ export default function Footer() {
 
           {/* Email */}
           <a
-            href="mailto:Info@clarityblueprintsystems.com"
+            href="mailto:Info@clarityblueprintsystem.com"
             className="mt-4 flex items-center gap-2 text-md font-semibold text-gray-400 hover:text-[#3b82f6] transition"
           >
             <Mail className="hover:text-[#3b82f6] cursor-pointer transition" />
-            Info@clarityblueprintsystems.com
+            Info@clarityblueprintsystem.com
           </a>
         </div>
 
