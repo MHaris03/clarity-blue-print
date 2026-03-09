@@ -85,7 +85,7 @@ export default function Navbar() {
           {/* Logo and Close Button */}
           <div className="flex items-center justify-between mb-6">
             <NavLink to="/" onClick={() => setIsOpen(false)}>
-              <img src='/Clarityblueprint.jpeg' alt="Clarity Logo" className="h-20 w-24" />
+              <img src='/logo.png' alt="Clarity Logo" className="h-24 w-24" />
             </NavLink>
             <button onClick={() => setIsOpen(false)}>
               <X size={26} />
