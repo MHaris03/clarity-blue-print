@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/">
-          <img src='/Clarityblueprint.jpeg' alt="Clarity Logo" className="h-20 w-24" />
+          <img src='/logo.png' alt="Clarity Logo" className="h-24 w-24" />
         </NavLink>
 
         {/* Desktop Menu */}
