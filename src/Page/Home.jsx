@@ -1,6 +1,10 @@
 import Hero from "../components/Hero";
+import BenefitsSection from "./Benefits";
+import AIClarityCoachPage from "./Coach";
 import CtaButton from "./CtaButton";
+import PlatformEcosystem from "./EcoSystem";
 import HeroSection from "./Herosection";
+import HowItWorks from "./HowItWorks";
 import HowWorks from "./HowWorks";
 import Problem from "./Problem";
 import Receive from "./Receive";
@@ -13,13 +17,17 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <Transformation />
             <Problem />
+            <Transformation />
+            <HowItWorks />
             {/* <Receive/> */}
-            <WhoThis />
             <HowWorks />
-            <Social />
-            <ReflectionSection />
+            <PlatformEcosystem/>
+            <BenefitsSection/>
+            <AIClarityCoachPage/>
+            {/* <WhoThis /> */}
+            {/* <Social /> */}
+            {/* <ReflectionSection /> */}
             <CtaButton />
             {/* <HeroSection/> */}
         </>

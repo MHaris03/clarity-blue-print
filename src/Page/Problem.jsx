@@ -1,73 +1,109 @@
-import React from 'react'
-import Problemimg from "../assets/problem.avif"
+import React from 'react';
+import Problemimg from "../assets/problem.png";
+import { motion } from "framer-motion";
 
 const Problem = () => {
-    return (
-        <section className="relative bg-black text-white py-10 px-6 overflow-hidden">
+  const listVariants = {
+    hidden: { opacity: 0, x: -30 },
+    visible: (i) => ({
+      opacity: 1,
+      x: 0,
+      transition: { delay: i * 0.2, duration: 0.6 },
+    }),
+  };
 
-            {/* subtle blue glow */}
-            <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#1455c0]/10 blur-3xl rounded-full pointer-events-none"></div>
+  return (
+    <section className="relative bg-black text-white py-16 px-6 overflow-hidden">
 
-            <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#1455c0]/10 blur-3xl rounded-full pointer-events-none"></div>
 
-                {/* Left Content */}
-                <div>
+      <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-                    <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-                        Most People Aren’t Confused.
-                        <br />
-                        <span className="text-[#1455c0]">They’re Overloaded.</span>
-                    </h2>
+        {/* Left Content */}
+        <div>
 
-                    <p className="text-gray-200 text-lg mb-10">
-                        You don’t lack intelligence.
-                        You lack structure.
-                    </p>
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-3xl md:text-5xl font-bold leading-tight mb-6"
+          >
+            Most People Aren’t Confused.<br />
+            <span className="text-[#1455c0]">They’re Overloaded.</span>
+          </motion.h2>
 
-                    <div className="space-y-6 text-gray-200 mb-12">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-gray-200 text-lg mb-10"
+          >
+            Without a decision system people experience:
+          </motion.p>
 
-                        <div className="border-l-2 border-[#1455c0] pl-4">
-                            Too many decisions.
-                        </div>
+          <div className="space-y-6 text-gray-200 mb-12">
+            {["Too many decisions.", "Too many expectations.", "Too much noise."].map((item, i) => (
+              <motion.div
+                key={i}
+                custom={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={listVariants}
+                className="border-l-2 border-[#1455c0] pl-4"
+              >
+                {item}
+              </motion.div>
+            ))}
+          </div>
 
-                        <div className="border-l-2 border-[#1455c0] pl-4">
-                            Too many expectations.
-                        </div>
+          <div className="grid grid-cols-2 gap-6 text-gray-200 mb-12">
+            {["Decision fatigue", "Career confusion", "Relationship conflict", "Trial-and-error living", "Burnout"].map((item, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+              >
+                {item}
+              </motion.p>
+            ))}
+          </div>
 
-                        <div className="border-l-2 border-[#1455c0] pl-4">
-                            Too much noise.
-                        </div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-lg text-gray-200 font-medium"
+          >
+            Most people were never taught
+            <span className="text-[#1455c0]"> how their decision system actually works.</span>
+          </motion.p>
 
-                    </div>
+        </div>
 
-                    <div className="grid grid-cols-2 gap-6 text-gray-200 mb-12">
-                        <p>Decision fatigue</p>
-                        <p>Burnout</p>
-                        <p>Inconsistent income</p>
-                        <p>Relationship friction</p>
-                        <p>Constant self-doubt</p>
-                    </div>
+        {/* Right Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="relative"
+        >
+          <img
+            src={Problemimg}
+            alt="Professional feeling overwhelmed at desk"
+            className="rounded-3xl shadow-2xl object-cover w-full"
+          />
+        </motion.div>
 
-                    <p className="text-lg text-gray-200 font-medium">
-                        Clarity isn’t about motivation.
-                        <span className="text-[#1455c0]"> It’s about operating correctly.</span>
-                    </p>
-
-                </div>
-
-                {/* Right Image */}
-                <div className="relative">
-                    <img
-                        src={Problemimg}
-                        alt="Professional feeling overwhelmed at desk"
-                        className="rounded-3xl shadow-2xl object-cover w-full h-[500px]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                </div>
-
-            </div>
-        </section>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default Problem
+export default Problem;

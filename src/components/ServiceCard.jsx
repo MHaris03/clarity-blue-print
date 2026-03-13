@@ -5,7 +5,7 @@ export default function ServicePage({ title, description, ctaLink, ctaText }) {
   return (
     <section className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-12 text-center">
       
-      <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-500">
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#1455c0]">
         {title}
       </h1>
 

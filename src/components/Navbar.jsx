@@ -41,7 +41,7 @@ export default function Navbar() {
           <div className="relative">
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex items-center gap-1 hover:text-blue-500 transition"
+              className="flex items-center gap-1 hover:text-[#1455c0] transition"
             >
               Services <ChevronDown size={16} />
             </button>
@@ -85,7 +85,7 @@ export default function Navbar() {
           {/* Logo and Close Button */}
           <div className="flex items-center justify-between mb-6">
             <NavLink to="/" onClick={() => setIsOpen(false)}>
-              <img src='/logo.png' alt="Clarity Logo" className="h-24 w-24" />
+              <img src='/logo.png' alt="clarity" className="h-24 w-24" />
             </NavLink>
             <button onClick={() => setIsOpen(false)}>
               <X size={26} />
@@ -94,22 +94,22 @@ export default function Navbar() {
 
           {/* Mobile Links with vertical spacing */}
           <div className="flex flex-col space-y-4">
-            <NavLink to="/" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>Home</NavLink>
-            <NavLink to="/about-us" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>About Clarity</NavLink>
+            <NavLink to="/" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-[#1455c0] font-semibold" : ""}>Home</NavLink>
+            <NavLink to="/about-us" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-[#1455c0] font-semibold" : ""}>About Clarity</NavLink>
 
             {mobileServices.map((service, i) => (
               <NavLink
                 key={i}
                 to={service.path}
                 onClick={() => setIsOpen(false)}
-                className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}
+                className={({ isActive }) => isActive ? "text-[#1455c0] font-semibold" : ""}
               >
                 {service.name}
               </NavLink>
             ))}
 
-            <NavLink to="/contact-us" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>Contact Us</NavLink>
-            <NavLink to="/testimonials" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-blue-500 font-semibold" : ""}>Testimonials</NavLink>
+            <NavLink to="/contact-us" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-[#1455c0] font-semibold" : ""}>Contact Us</NavLink>
+            <NavLink to="/testimonials" onClick={() => setIsOpen(false)} className={({ isActive }) => isActive ? "text-[#1455c0] font-semibold" : ""}>Testimonials</NavLink>
           </div>
         </div>
       )}
